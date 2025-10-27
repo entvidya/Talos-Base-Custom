@@ -44,6 +44,7 @@ namespace Talos.Forms
                 { "ard pian na dion", "A/M/PND" },
                 { "mor pian na dion", "A/M/PND" },
                 { "pian na dion", "A/M/PND" },
+				{ "Unholy Explosion", "Unholy Explosion" },
                 { "deo searg", "A/DS" },
                 { "ard deo searg", "A/DS" },
                 { "Deception of Life", "Deception of Life" },
@@ -57,9 +58,8 @@ namespace Talos.Forms
                 { "Cursed Tune", "Cursed Tune" },
                 { "Supernova Shot", "Supernova Shot" },
                 { "Volley", "Volley" },
-                { "Unholy Explosion", "Unholy Explosion" },
                 { "deo searg gar", "M/DSG" },
-                { "mor searg gar", "M/DSG" },
+                { "mor deo searg gar", "M/DSG" },
                 { "Shock Arrow", "Shock Arrow" }
             };
 
