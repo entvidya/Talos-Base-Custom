@@ -5448,13 +5448,6 @@ namespace Talos.Base
 
                         switch (spellName)
                         {
-                            case "Supernova Shot":
-                                return Client.UseSpell("Supernova Shot", target, _autoStaffSwitch, false);
-
-                            case "Shock Arrow":
-                                return Client.UseSpell("Shock Arrow", target, _autoStaffSwitch, false) &&
-                                       Client.UseSpell("Shock Arrow", target, _autoStaffSwitch, false);
-
                             case "Volley":
                                 return Client.UseSpell("Volley", target, _autoStaffSwitch, true);
 
@@ -5466,12 +5459,6 @@ namespace Talos.Base
                                     return true;
                                 }
                                 return Client.UseSpell("mor strioch pian gar", Client.Player, _autoStaffSwitch, true);
-
-                            case "Unholy Explosion":
-                                return Client.UseSpell("Unholy Explosion", target, _autoStaffSwitch, false);
-
-                            case "Cursed Tune":
-                                return TryCastAnyRank("Cursed Tune", target, _autoStaffSwitch, false);
 
                             case "M/DSG":
                                 return Client.UseSpell("mor deo searg gar", Client.Player, _autoStaffSwitch, false) ||
@@ -5511,8 +5498,21 @@ namespace Talos.Base
                                     _autoStaffSwitch,
                                     false);
 
+                            case "Supernova Shot":
+                                return Client.UseSpell("Supernova Shot", target, _autoStaffSwitch, false);
+
+                            case "Shock Arrow":
+                                return Client.UseSpell("Shock Arrow", target, _autoStaffSwitch, false) &&
+                                       Client.UseSpell("Shock Arrow", target, _autoStaffSwitch, false);
+
                             case "Frost Arrow":
                                 return TryCastAnyRank("Frost Arrow", target, _autoStaffSwitch, false);
+
+                            case "Unholy Explosion":
+                                return Client.UseSpell("Unholy Explosion", target, _autoStaffSwitch, false);
+
+                            case "Cursed Tune":
+                                return TryCastAnyRank("Cursed Tune", target, _autoStaffSwitch, false);
 
                             default:
                                 return Client.UseSpell(spellName, target, _autoStaffSwitch, false) ||
