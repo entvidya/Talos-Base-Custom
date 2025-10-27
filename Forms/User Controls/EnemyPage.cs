@@ -47,6 +47,7 @@ namespace Talos.Forms
                 { "ard pian na dion", "A/M/PND" },
                 { "mor pian na dion", "A/M/PND" },
                 { "pian na dion", "A/M/PND" },
+				{ "Cursed Tune", "Cursed Tune" },
 				{ "Unholy Explosion", "Unholy Explosion" },
                 { "deo searg", "A/DS" },
                 { "ard deo searg", "A/DS" },
@@ -57,7 +58,6 @@ namespace Talos.Forms
             Dictionary<string, string> multiTarget = new Dictionary<string, string> 
             { 
                 { "mor strioch pian gar", "MSPG" },
-                { "Cursed Tune", "Cursed Tune" },
                 { "Volley", "Volley" },
                 { "Barrage", "Barrage" },
                 { "Star Arrow", "Star Arrow" },
@@ -68,8 +68,8 @@ namespace Talos.Forms
             UIHelper.SetupComboBox(spellsCurseCombox, new[] { "Demon Seal", "Demise", "Darker Seal", "Dark Seal", "ard cradh", "mor cradh", "cradh", "beag cradh" }, spellsCurseCbox);
             UIHelper.SetupComboBox(spellsFasCombox, new[] { "ard fas nadur", "mor fas nadur", "fas nadur", "beag fas nadur" }, spellsFasCbox);
             UIHelper.SetupComboBox(spellsControlCombox, new[] { "Mesmerize", "pramh", "beag pramh", "suain" }, spellsControlCbox);
-            UIHelper.SetupComboBox(attackComboxOne, new[] { "Hail of Feathers", "Frost Arrow", "Shock Arrow", "Chadul's Shot", "Supernova Shot", "Hypernova Shot", "Keeter", "Groo", "Torch", "Mermaid", "ard pian na dion", "mor pian na dion", "pian na dion", "Unholy Explosion", "ard deo searg", "deo searg", "Deception of Life", "Dragon Blast", "lamh" }, attackCboxOne, null, null, null, partialMatch: true, abbreviations: singleTarget);
-            UIHelper.SetupComboBox(attackComboxTwo, new[] { "mor strioch pian gar", "Cursed Tune", "Volley", "Barrage", "Star Arrow", "mor deo searg gar", "deo searg gar"}, attackCboxTwo, null, null, null, partialMatch: true, abbreviations: multiTarget);
+            UIHelper.SetupComboBox(attackComboxOne, new[] { "Hail of Feathers", "Frost Arrow", "Shock Arrow", "Chadul's Shot", "Supernova Shot", "Hypernova Shot", "Keeter", "Groo", "Torch", "Mermaid", "ard pian na dion", "mor pian na dion", "pian na dion", "Unholy Explosion", "Cursed Tune", "ard deo searg", "deo searg", "Deception of Life", "Dragon Blast", "lamh" }, attackCboxOne, null, null, null, partialMatch: true, abbreviations: singleTarget);
+            UIHelper.SetupComboBox(attackComboxTwo, new[] { "mor strioch pian gar", "Volley", "Barrage", "Star Arrow", "mor deo searg gar", "deo searg gar"}, attackCboxTwo, null, null, null, partialMatch: true, abbreviations: multiTarget);
             UIHelper.SetupCheckbox(mpndSilenced, "ard pian na dion", "mor pian na dion", "pian na dion");
             UIHelper.SetupCheckbox(mpndDioned, "ard pian na dion", "mor pian na dion", "pian na dion");
             UIHelper.SetupCheckbox(mspgSilenced, "mor strioch pian gar");
